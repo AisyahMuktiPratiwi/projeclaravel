@@ -4,11 +4,17 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class Hellocontroller extends Controller
+class HelloController extends Controller
 {
-    //ini tampilan function index
+    //ini tampilan fuction index
     public function index()
     {
-        //echo "<h1>HELLO WORD!!!</h1>
+        //echo "<h1>Hello Word, Dari Controller !!</h1>";
+        //$nama = "Aisyah Mukti Pratiwi";
+        //$pelajaran =["PWPB","ALGORITMA","PD","BD","PBO"];
+        //return view('hello.index', compact('nama','pelajaran'));
+        $nama = "Aisyah Mukti Pratiwi";
+        $pelajaran =["PWPB","ALGORITMA","PD","BD","PBO"];
+        return view('hello.index', ['nama'=> $nama, 'pelajaran'=> $pelajaran]);
     }
 }

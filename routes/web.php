@@ -22,3 +22,6 @@ Route::get('HELLO', function () {
     echo "<h1>HELLO WORD!!!</h1>";
     echo "<h2> ini laravel Aisyah Mukti Pratiwi</h2>";
 });
+
+//rute baru mengarah ke cotroller
+route::get('hellocontroller', 'HelloController@index');
