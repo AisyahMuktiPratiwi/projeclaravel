@@ -25,3 +25,6 @@ Route::get('HELLO', function () {
 
 //rute baru mengarah ke cotroller
 route::get('hellocontroller', 'HelloController@index');
+
+//resource untuk memanggil seluruh fungsi yang ada dicontroller
+route::resource('product', 'ProductController');
